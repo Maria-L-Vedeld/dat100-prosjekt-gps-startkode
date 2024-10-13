@@ -82,9 +82,6 @@ public class GPSPoint {
 	
 	public String toString() {
 		
-		
-		
-
 		// TODO
 		String tid = getTime() + "";
 		String breddegrad = getLatitude() + "";
