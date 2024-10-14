@@ -25,7 +25,7 @@ public class GPSPoint {
 	// TODO - get/set metoder
 	public int getTime() {
 		
-		//System.out.println(this.time);
+		System.out.println(this.time);
 		
 		return this.time;
 		
