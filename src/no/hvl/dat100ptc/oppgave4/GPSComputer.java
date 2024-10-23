@@ -159,20 +159,20 @@ public class GPSComputer {
 
 		// TODO
 		int totalTime = totalTime();
-	    double totalDistance = totalDistance();
+	    double totalDistance = totalDistance() / 1000;
 	    double totalElevation = totalElevation();
 	    double maxSpeed = maxSpeed() * 3.6; 
 	    double averageSpeed = averageSpeed() * 3.6; 
 	    double energy = totalKcal(WEIGHT); 
 	    
-	    System.out.println("==============================================\n");
+	    System.out.println("==============================================");
 	    System.out.println("Total Time     :   " + GPSUtils.formatTime(totalTime));
-	    System.out.println("Total distance :      " + totalDistance / 1000 + " km");
+	    System.out.println("Total distance :      " + totalDistance + " km");
 	    System.out.println("Total elevation:     " + totalElevation + " m");
 	    System.out.println("Max speed      :      " + maxSpeed + " km/t");
 	    System.out.println("Average speed  :      " + averageSpeed + " km/t");
 	    System.out.println("Energy         :     " + energy + " kcal");
-	    System.out.println("==============================================\n");
+	    System.out.println("==============================================");
 
 	}
 
